@@ -11,9 +11,9 @@ router.get('/', function (req, res, next) {
   })
 })
 
-// let apiDirPath = path.resolve(__dirname, "../../src/api") //  api文件夹路径
+let apiDirPath = path.resolve(__dirname, "../../src/api") //  api文件夹路径
 
-let apiDirPath = path.resolve(__dirname, "../api") //  api文件夹路径
+// let apiDirPath = path.resolve(__dirname, "../api") //  api文件夹路径
 // 读取文件列表
 fs.readdir(apiDirPath,
   (err, files) => {
